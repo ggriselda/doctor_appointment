@@ -14,7 +14,7 @@ const app = express()
 const port = process.env.PORT || 8000
 
 const corseOptions = {
-    origin: ['http://192.168.34.123:5173'], // Địa chỉ IP frontend http://172.21.1.124
+    origin: ['http://localhost:5173'], // Địa chỉ IP frontend http://172.21.1.124
     credentials: true, // Cho phép gửi cookie
 };
 

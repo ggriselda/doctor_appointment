@@ -1,5 +1,6 @@
 
 import { formateDate } from "../../utils/formateDate";
+import { formatTime } from "../../utils/formateTime";
 
 const Appointments = ({ appointments }) => {
   return (
@@ -19,7 +20,7 @@ const Appointments = ({ appointments }) => {
             Price
           </th>
           <th scope="col" class="px-6 py-3">
-            Booked On
+            Time
           </th>
         </tr>
       </thead>
@@ -60,7 +61,10 @@ const Appointments = ({ appointments }) => {
               )}
             </td>
             <td className="px-6 py-4">{item.ticketPrice}</td>
-            <td className="px-6 py-4">{formateDate(item.createdAt)}</td>
+            <td className="px-6 py-4">
+              {formateDate(item.bookingStartTime)} <br />
+              {formatTime(item.bookingStartTime)} - {formatTime(item.bookingEndTime)}
+            </td>
           </tr>
         ))}
       </tbody>

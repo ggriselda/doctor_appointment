@@ -22,6 +22,14 @@ const bookingSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    bookingStartTime: {
+      type: Date,
+      required: true
+    },
+    bookingEndTime: {
+      type: Date,
+      required: true
+    },
   },
   { timestamps: true }
 );
