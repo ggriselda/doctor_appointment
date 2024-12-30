@@ -91,7 +91,7 @@ const Profile = ({user}) => {
         <div className="mb-5">
           <input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Nhập email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -104,7 +104,7 @@ const Profile = ({user}) => {
         <div className="mb-5">
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             name="password"
             value={formData.password}
             onChange={handleInputChange}
@@ -117,7 +117,7 @@ const Profile = ({user}) => {
         <div className="mb-5">
           <input
             type="text"
-            placeholder="Blood type"
+            placeholder="Nhóm máu"
             name="bloodType"
             value={formData.bloodType}
             onChange={handleInputChange}
@@ -143,10 +143,10 @@ const Profile = ({user}) => {
               value={formData.gender}
               onChange={handleInputChange}
             >
-              <option value="">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="">Chọn</option>
+              <option value="Male">Nam</option>
+              <option value="Female">Nữ</option>
+              <option value="other">Khác</option>
             </select>
           </label>
         </div>

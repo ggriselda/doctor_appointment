@@ -10,7 +10,7 @@ const Feedback = ({ reviews, totalRating }) => {
     <div>
       <div className="mb-[50px]">
         <h4 className="text-[20px] leading-[30px] font-bold text-headingColor mb-[30px]">
-          All reviews ({totalRating})
+          Tất cả đánh giá ({totalRating})
         </h4>
 
         {reviews?.map((reviews, index) => (
@@ -45,7 +45,7 @@ const Feedback = ({ reviews, totalRating }) => {
       {!showFeedbackForm && (
         <div className="text-center ">
           <button className="btn" onClick={() => setShowFeedbackForm(true)}>
-            Give Feedback
+            Phản hồi
           </button>
         </div>
       )}

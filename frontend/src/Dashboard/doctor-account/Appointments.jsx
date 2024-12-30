@@ -8,19 +8,19 @@ const Appointments = ({ appointments }) => {
       <thead class="text-xs text-gray-700 uppercase bg-gray-50">
         <tr>
           <th scope="col" class="px-6 py-3">
-            Name
+            Tên
           </th>
           <th scope="col" class="px-6 py-3">
-            Gender
+            Giới tính
           </th>
           <th scope="col" class="px-6 py-3">
-            Payment
+            Thanh toán
           </th>
           <th scope="col" class="px-6 py-3">
-            Price
+            Giá
           </th>
           <th scope="col" class="px-6 py-3">
-            Time
+            Thời gian
           </th>
         </tr>
       </thead>

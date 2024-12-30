@@ -78,15 +78,15 @@ const Signup = () => {
           </div>
 
           <div className="rounded-l-lg lg:pl-16 py-10">
-            <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10">
-              Create an <span className="text-primaryColor">account</span>{" "}
+            <h3 className="text-headingColor text-[35px] leading-9 font-bold mb-10">
+              Tạo <span className="text-primaryColor">tài khoản</span>{" "}
             </h3>
 
             <form onSubmit={submitHandler}>
               <div className="mb-5">
                 <input
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="Họ và tên"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
@@ -99,7 +99,7 @@ const Signup = () => {
               <div className="mb-5">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Nhập email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
@@ -112,7 +112,7 @@ const Signup = () => {
               <div className="mb-5">
                 <input
                   type="password"
-                  placeholder="Password"
+                  placeholder="Nhập mật khẩu"
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
@@ -129,7 +129,7 @@ const Signup = () => {
                   className="text-headingColor font-bold text-[16px]
           leading-7 "
                 >
-                  Are you a:
+                  Bạn là:
                   <select
                     name="role"
                     className="text-textcolor 
@@ -137,8 +137,8 @@ const Signup = () => {
                     value={formData.role}
                     onChange={handleInputChange}
                   >
-                    <option value="patient">Patient</option>
-                    <option value="doctor">Doctor</option>
+                    <option value="patient">Bệnh nhân</option>
+                    <option value="doctor">Bác sĩ</option>
                   </select>
                 </label>
                 <label
@@ -146,7 +146,7 @@ const Signup = () => {
                   className="text-headingColor font-bold text-[16px]
           leading-7 "
                 >
-                  Gender:
+                  Giới tính:
                   <select
                     name="gender"
                     className="text-textcolor 
@@ -154,10 +154,10 @@ const Signup = () => {
                     value={formData.gender}
                     onChange={handleInputChange}
                   >
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
+                    <option value="">Chọn</option>
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                    <option value="Other">Khác</option>
                   </select>
                 </label>
               </div>
@@ -187,10 +187,10 @@ const Signup = () => {
                   <label
                     htmlFor="customFile"
                     className="absolute top-0 left-0 w-full h-full 
-            flex items-center px-[0.75rem] py-[0.375] text-[15px] leading-6 overflow-hidden
-            bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
+    flex items-center justify-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden
+    bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
                   >
-                    Upload Photo
+                    Chọn ảnh
                   </label>
                 </div>
               </div>
@@ -210,12 +210,12 @@ const Signup = () => {
                 </button>
               </div>
               <p className="mt-5 text-textColor text-center">
-                Already have an account?
+                Bạn đã có tài khoản chưa?
                 <Link
                   className="text-primaryColor font-medium ml-1"
                   to="/login"
                 >
-                  Login
+                  Đăng nhập
                 </Link>
               </p>
             </form>

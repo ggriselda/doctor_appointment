@@ -153,7 +153,7 @@ const Profile = ({ doctorData }) => {
   return (
     <div>
       <h2 className="text-headingColor font-bold text-[24px] leading-9 mb-10">
-        Profile Information
+        Thông tin cá nhân
       </h2>
       <form>
         <div className="mb-5">
@@ -196,13 +196,13 @@ const Profile = ({ doctorData }) => {
         </div>
 
         <div className="mb-5">
-          <p className="form__label">Bio*</p>
+          <p className="form__label">Tiểu sử*</p>
           <input
             type="text"
             name="bio"
             value={formData.bio}
             onChange={handleInputChange}
-            placeholder="Bio"
+            placeholder="Tiểu sử"
             className="form__input"
             maxLength={100}
           />
@@ -218,10 +218,10 @@ const Profile = ({ doctorData }) => {
                 onChange={handleInputChange}
                 className="form__input py-3.5"
               >
-                <option value="">Select</option>
-                <option value="nam">Nam</option>
-                <option value="nữ">Nữ</option>
-                <option value="khác">Khác</option>
+                <option value="">Chọn</option>
+                <option value="Male">Nam</option>
+                <option value="Female">Nữ</option>
+                <option value="Other">Khác</option>
               </select>
             </div>
             <div>
@@ -500,7 +500,7 @@ const Profile = ({ doctorData }) => {
                 flex items-center px-[0.75rem] py-[0.375] text-[15px] leading-6 overflow-hidden
                 bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
             >
-              Upload Photo
+              Chọn ảnh
             </label>
           </div>
         </div>
@@ -512,7 +512,7 @@ const Profile = ({ doctorData }) => {
             className="bg-primaryColor
              text-white text-[18px] leading-[30px] w-full py-3 px-4 rounded-lg"
           >
-            Update Profile
+            Cập nhật thông tin
           </button>
         </div>
       </form>

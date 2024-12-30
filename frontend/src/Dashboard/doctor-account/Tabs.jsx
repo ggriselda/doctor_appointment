@@ -26,7 +26,7 @@ const Tabs = ({ tab, setTab }) => {
               : 'bg-transparent text-headingColor'
           } w-full btn mt-0 rounded-md`}
         >
-          Overview
+          Tổng quan
         </button>
 
         <button
@@ -37,7 +37,7 @@ const Tabs = ({ tab, setTab }) => {
               : 'bg-transparent text-headingColor'
           } w-full btn mt-0 rounded-md`}
         >
-          Appointments
+          Lịch hẹn
         </button>
 
         <button
@@ -48,7 +48,7 @@ const Tabs = ({ tab, setTab }) => {
               : 'bg-transparent text-headingColor'
           } w-full btn mt-0 rounded-md`}
         >
-          Profile
+          Thông tin
         </button>
 
         <div className="mt-[100px] w-full">
@@ -56,10 +56,10 @@ const Tabs = ({ tab, setTab }) => {
                   onClick={handleLogout}
                   className="w-full bg-[#181A1E] p-3 text-[16px] leading-7 rounded-md text-white"
                 >
-                  Logout
+                  Thoát
                 </button>
                 <button className="w-full bg-red-600 mt-4 p-3 text-[16px] leading-7 rounded-md text-white">
-                  Delete account
+                  Xóa tài khoản
                 </button>
               </div>
 

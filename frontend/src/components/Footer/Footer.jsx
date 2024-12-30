@@ -26,11 +26,11 @@ const socialLinks = [
 const quickLinks01 = [
   {
     path: '/home',
-    display: 'Home',
+    display: 'Trang chủ',
   },
   {
     path: '/services',
-    display: 'Services',
+    display: 'Dịch vụ',
   },
   {
     path: '/',
@@ -41,11 +41,11 @@ const quickLinks01 = [
 const quickLinks02 = [
   {
     path: '/doctors',
-    display: 'Find a Doctor',
+    display: 'Bác sĩ',
   },
   {
     path: '/doctors',
-    display: 'Request an Appointment',
+    display: 'Đặt lịch hẹn',
   },
   
   
@@ -54,11 +54,11 @@ const quickLinks02 = [
 const quickLinks03 = [
   {
     path: '/',
-    display: 'Donate',
+    display: 'Ủng hộ',
   },
   {
     path: '/contact',
-    display: 'Contact Us',
+    display: 'Liên hệ',
   },
   
 ]
@@ -87,7 +87,7 @@ const Footer = () => {
 
         <div>
           <h2 className='text-[20px] leading-[30px] font-[700] mb-6
-           text-headingColor'>Quick Links</h2>
+           text-headingColor'>Truy cập</h2>
            <ul>
             {quickLinks01.map((item, index) => 
             <li key={index} className='mb-4'>
@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div>
           <h2 className='text-[20px] leading-[30px] font-[700] mb-6
-           text-headingColor'>I want to:</h2>
+           text-headingColor'>Tôi muốn:</h2>
            <ul>
             {quickLinks02.map((item, index) => 
             <li key={index} className='mb-4'>
@@ -111,7 +111,7 @@ const Footer = () => {
 
         <div>
           <h2 className='text-[20px] leading-[30px] font-[700] mb-6
-           text-headingColor'>Support</h2>
+           text-headingColor'>Hỗ trợ</h2>
            <ul>
             {quickLinks03.map((item, index) => 
             <li key={index} className='mb-4'>

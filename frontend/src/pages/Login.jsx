@@ -61,15 +61,15 @@ const Login = () => {
   return (
     <section className="px-5 lg:px-0 ">
       <div className="w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10">
-        <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10">
-          Hello! <span className="text-primaryColor">Welcome</span> Back
+        <h3 className="text-headingColor text-[35px] leading-9 font-bold mb-10 text-center">
+          Đăng nhập 
         </h3>
 
         <form className="py-4 md:py-0" onSubmit={submitHandler}>
           <div className="mb-5">
             <input
               type="email"
-              placeholder="Enter Your Email"
+              placeholder="Nhập Email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
@@ -82,7 +82,7 @@ const Login = () => {
           <div className="mb-5">
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Nhập mật khẩu"
               name="password"
               value={formData.password}
               onChange={handleInputChange}
@@ -103,9 +103,9 @@ const Login = () => {
             </button>
           </div>
           <p className="mt-5 text-textColor text-center">
-            Don't have an account?
+            Chưa có tài khoản?
             <Link className="text-primaryColor font-medium ml-1" to="/register">
-              Register
+              Đăng ký
             </Link>
           </p>
         </form>

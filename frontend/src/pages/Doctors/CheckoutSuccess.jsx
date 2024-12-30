@@ -26,7 +26,7 @@ const CheckoutSuccess = () => {
               to="/home"
               className="px-12 bg-buttonBgColor text-white font-semibold py-3"
             >
-              Go Back To Home
+              Trở về trang chủ
             </Link>
           </div>
         </div>

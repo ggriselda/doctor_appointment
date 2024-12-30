@@ -120,7 +120,7 @@ const SidePanel = ({ doctorId, ticketPrice }) => {
           {/* Hiển thị giờ làm việc ở đây */}
           <li className="flex items-center justify-between mb-2">
             <p className="text-[15px] leading-6 text-textColor font-semibold">
-              Monday - Friday
+              Thứ hai - Thứ sáu
             </p>
             <p className="text-[15px] leading-6 text-textColor font-semibold">
               08:00 AM - 05:00 PM
